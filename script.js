@@ -25,11 +25,11 @@ function tampilkanGrafik(){
 }
 
 function bukaPopup() {
-  document.getElementById("popupForm").style.display = "flex";
+  document.getElementById("popup").classList.remove("hidden");
 }
 
 function tutupPopup() {
-  document.getElementById("popupForm").style.display = "none";
+  document.getElementById("popup").classList.add("hidden");
 }
 
 function cekHasil(){
@@ -50,6 +50,7 @@ function cekHasil(){
     hasilText.className = "tidak";
   }
 }
+
 
 
 
