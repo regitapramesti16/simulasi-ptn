@@ -1,12 +1,7 @@
 let chart;
 const mtk = avg(".mtk");
 
-function tampilkanGrafik(){
-  const inputs = document.querySelectorAll(".nilai");
-  let total = 0;
-
-  inputs.forEach(i => total += Number(i.value));
-  let rata = total / inputs.length;
+function tampilkanGrafik(rata){
 
   if(chart){
     chart.destroy();
@@ -22,7 +17,8 @@ function tampilkanGrafik(){
     },
     options: {
       responsive:true,
-      plugins:{legend:{display:false}}
+      plugins:{legend:{display:false}},
+      scales:{y:{beginAtZero:true, max:100}}
     }
   });
 }
@@ -51,18 +47,29 @@ function cekHasil(){
 
   let rata = total / inputs.length;
 
-  let hasilText = document.getElementById("hasilText");
+  let status = document.getElementById("hasilStatus");
+  let rataText = document.getElementById("hasilRata");
 
   if(rata >= 90){
-    hasilText.innerHTML = "✅ LAYAK MENDAFTAR<br>Rata-rata: " + rata.toFixed(2);
-    hasilText.className = "layak";
+    status.innerHTML = "✅ LAYAK MENDAFTAR";
+    status.className = "layak";
   } else {
-    hasilText.innerHTML = "❌ BELUM LAYAK<br>Rata-rata: " + rata.toFixed(2);
-    hasilText.className = "tidak";
+    status.innerHTML = "❌ BELUM LAYAK";
+    status.className = "tidak";
   }
 
-  tampilkanGrafik(); // 🔥 panggil grafik
+  rataText.innerHTML = "Rata-rata: " + rata.toFixed(2);
+
+  // tutup popup form
+  tutupPopup();
+
+  // tampilkan popup hasil
+  bukaHasil();
+
+  tampilkanGrafik(rata);
 }
+
+
 
 
 
