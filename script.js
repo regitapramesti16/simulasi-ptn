@@ -1,5 +1,4 @@
 let chart;
-const mtk = avg(".mtk");
 
 function tampilkanGrafik(rata){
 
@@ -68,6 +67,7 @@ function cekHasil(){
 
   tampilkanGrafik(rata);
 }
+
 
 
 
