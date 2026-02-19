@@ -6,7 +6,31 @@ body{
   animation: fadeIn .4s ease;
 }
 
+.hasil-box{
+  max-width: 420px;
+  text-align:center;
+}
+
+.layak{
+  color:#198754;
+  font-weight:bold;
+  font-size:20px;
+}
+
+.tidak{
+  color:#dc3545;
+  font-weight:bold;
+  font-size:20px;
+}
+
+#hasilRata{
+  font-size:18px;
+  margin-bottom:15px;
+}
+
+
 @keyframes fadeIn{
   from{opacity:0; transform: translateY(20px);}
   to{opacity:1; transform: translateY(0);}
 }
+
