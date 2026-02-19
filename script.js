@@ -49,8 +49,14 @@ function cekHasil(){
     }
   });
 
+  let warning = document.getElementById("warningBox");
   if(filled === 0){
-    alert("Silakan isi nilai terlebih dahulu");
+    warning.classList.remove("d-none");
+
+    setTimeout(() => {
+      warning.classList.add("d-none");
+    }, 2500);
+
     return;
   }
 
@@ -97,6 +103,7 @@ document.addEventListener("DOMContentLoaded", function(){
   }
 
 });
+
 
 
 
