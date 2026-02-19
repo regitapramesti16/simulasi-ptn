@@ -35,6 +35,14 @@ function tutupPopup() {
   document.getElementById("popup").classList.add("hidden");
 }
 
+function bukaHasil(){
+  document.getElementById("popupHasil").classList.remove("hidden");
+}
+
+function tutupHasil(){
+  document.getElementById("popupHasil").classList.add("hidden");
+}
+
 function cekHasil(){
   let inputs = document.querySelectorAll(".nilai");
   let total = 0;
@@ -55,6 +63,7 @@ function cekHasil(){
 
   tampilkanGrafik(); // 🔥 panggil grafik
 }
+
 
 
 
