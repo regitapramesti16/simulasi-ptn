@@ -19,55 +19,73 @@
   </button>
 </div>
 
-<div id="popup" class="popup hidden">
-  <div class="popup-box">
-    <h2>Simulasi Kelayakan PTN</h2>
+<div class="modal fade" id="modalCek">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content shadow-lg border-0 rounded-4">
 
-    <!-- KELAS 10 -->
-    <h3>Kelas 10</h3>
-    <div class="semester-grid">
-      <div>
-        <strong>Semester 1</strong>
-        <input type="number" class="nilai">
-        <input type="number" class="nilai">
-        <input type="number" class="nilai">
+      <div class="modal-header bg-primary text-white">
+        <h5 class="modal-title">Simulasi Kelayakan PTN</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
       </div>
-      <div>
-        <strong>Semester 2</strong>
-        <input type="number" class="nilai">
-        <input type="number" class="nilai">
-        <input type="number" class="nilai">
+
+      <div class="modal-body">
+
+        <!-- KELAS 10 -->
+        <div class="card mb-3 border-0 shadow-sm">
+          <div class="card-body">
+            <h6 class="fw-bold">Kelas 10</h6>
+            <div class="row">
+              <div class="col-md-6">
+                <small>Semester 1</small>
+                <input type="number" class="form-control mb-2 nilai">
+                <input type="number" class="form-control mb-2 nilai">
+                <input type="number" class="form-control nilai">
+              </div>
+              <div class="col-md-6">
+                <small>Semester 2</small>
+                <input type="number" class="form-control mb-2 nilai">
+                <input type="number" class="form-control mb-2 nilai">
+                <input type="number" class="form-control nilai">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- KELAS 11 -->
+        <div class="card mb-3 border-0 shadow-sm">
+          <div class="card-body">
+            <h6 class="fw-bold">Kelas 11</h6>
+            <div class="row">
+              <div class="col-md-6">
+                <small>Semester 1</small>
+                <input type="number" class="form-control mb-2 nilai">
+                <input type="number" class="form-control mb-2 nilai">
+                <input type="number" class="form-control nilai">
+              </div>
+              <div class="col-md-6">
+                <small>Semester 2</small>
+                <input type="number" class="form-control mb-2 nilai">
+                <input type="number" class="form-control mb-2 nilai">
+                <input type="number" class="form-control nilai">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <button class="btn btn-success w-100" onclick="cekHasil()">UJI HASIL</button>
+
+        <div id="hasilText" class="text-center fw-bold mt-3"></div>
+
+        <canvas id="chartNilai" class="mt-3"></canvas>
+
       </div>
     </div>
-
-    <!-- KELAS 11 -->
-    <h3>Kelas 11</h3>
-    <div class="semester-grid">
-      <div>
-        <strong>Semester 1</strong>
-        <input type="number" class="nilai">
-        <input type="number" class="nilai">
-        <input type="number" class="nilai">
-      </div>
-      <div>
-        <strong>Semester 2</strong>
-        <input type="number" class="nilai">
-        <input type="number" class="nilai">
-        <input type="number" class="nilai">
-      </div>
-    </div>
-
-    <button class="btn-hasil" onclick="cekHasil()">UJI HASIL</button>
-
-    <p id="hasilText"></p>
-    <canvas id="chartNilai"></canvas>
-
-    <button class="btn-tutup" onclick="tutupPopup()">Tutup</button>
   </div>
 </div>
   
 </body>
 </html>
+
 
 
 
