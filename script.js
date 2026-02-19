@@ -30,29 +30,51 @@ function tutupPopup() {
   document.getElementById("modalCek").classList.add("hidden");
 }
 
-function bukaHasil(){
-  document.getElementById("popupHasil").classList.remove("hidden");
-}
-
-function tutupHasil(){
-  document.getElementById("popupHasil").classList.add("hidden");
-}
-
 function cekHasil(){
-  console.log("fungsi berjalan"); // debug
 
   let inputs = document.querySelectorAll(".nilai");
   let total = 0;
+  let filled = 0;
 
-  inputs.forEach(i => total += Number(i.value));
+  inputs.forEach(i => {
+    if(i.value !== ""){
+      total += Number(i.value);
+      filled++;
+    }
+  });
 
-  let rata = total / inputs.length;
+  if(filled === 0){
+    alert("Silakan isi nilai terlebih dahulu");
+    return;
+  }
 
-  console.log("rata:", rata);
+  let rata = total / filled;
 
-  tutupPopup();
-  bukaHasil();
+  let status = document.getElementById("hasilStatus");
+  let rataText = document.getElementById("hasilRata");
+
+  if(rata >= 90){
+    status.innerHTML = "✅ LAYAK MENDAFTAR";
+    status.className = "layak";
+  } else {
+    status.innerHTML = "❌ BELUM LAYAK";
+    status.className = "tidak";
+  }
+
+  rataText.innerHTML = "Rata-rata: " + rata.toFixed(2);
+
+  tampilkanGrafik(rata);
+
+  // tutup modal form
+  let modalCek = bootstrap.Modal.getInstance(document.getElementById('modalCek'));
+  modalCek.hide();
+
+  // buka modal hasil
+  let modalHasil = new bootstrap.Modal(document.getElementById('modalHasil'));
+  modalHasil.show();
 }
+
+
 
 
 
