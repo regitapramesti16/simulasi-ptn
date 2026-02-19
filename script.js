@@ -1,4 +1,5 @@
 let chart;
+const mtk = avg(".mtk");
 
 function tampilkanGrafik(){
   const mtk = avg(".mtk");
@@ -52,6 +53,7 @@ function cekHasil(){
 
   tampilkanGrafik(); // 🔥 panggil grafik
 }
+
 
 
 
