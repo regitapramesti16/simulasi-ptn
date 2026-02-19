@@ -57,10 +57,22 @@ canvas{
   margin-top:15px;
 }
 
+.warning-box{
+  background: #fff3cd;
+  color: #856404;
+  border-left: 5px solid #ffc107;
+  padding: 12px 15px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  font-size: 14px;
+  animation: fadeSlide .4s ease;
+}
+
 @keyframes fadeIn{
   from{opacity:0; transform: translateY(20px);}
   to{opacity:1; transform: translateY(0);}
 }
+
 
 
 
