@@ -1,9 +1,12 @@
 body{
-  font-family: 'Segoe UI', sans-serif;
+  font-family: Inter, system-ui, sans-serif;
+  background: #f8fafc;
 }
 
 .modal-content{
-  animation: fadeIn .4s ease;
+  border-radius: 14px;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
 }
 
 .hasil-box{
@@ -85,6 +88,7 @@ canvas{
   from{opacity:0; transform: translateY(20px);}
   to{opacity:1; transform: translateY(0);}
 }
+
 
 
 
