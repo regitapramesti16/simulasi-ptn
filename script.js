@@ -78,9 +78,27 @@ function cekHasil(){
   // buka modal hasil
   let modalHasil = new bootstrap.Modal(document.getElementById('modalHasil'));
   modalHasil.show();
-
-  resetForm();
 }
+
+function resetForm(){
+  document.querySelectorAll(".nilai").forEach(input => {
+    input.value = "";
+  });
+}
+
+/* ===== TAMBAHKAN DI BAWAH INI ===== */
+
+document.addEventListener("DOMContentLoaded", function(){
+
+  const modalCek = document.getElementById('modalCek');
+
+  if(modalCek){
+    modalCek.addEventListener('hidden.bs.modal', resetForm);
+  }
+
+});
+
+
 
 
 
