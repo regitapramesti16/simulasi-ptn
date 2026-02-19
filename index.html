@@ -80,21 +80,28 @@
 </div>
 
 <!-- POPUP HASIL -->
-<div id="popupHasil" class="popup hidden">
-  <div class="popup-box hasil-box">
-    <h2>Hasil Evaluasi</h2>
+<div class="modal fade" id="modalHasil">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content text-center p-4">
 
-    <p id="hasilStatus"></p>
-    <p id="hasilRata"></p>
+      <h4 class="mb-3">Hasil Evaluasi</h4>
 
-    <canvas id="chartNilai"></canvas>
+      <p id="hasilStatus"></p>
+      <p id="hasilRata"></p>
 
-    <button class="btn-tutup" onclick="tutupHasil()">Tutup</button>
+      <canvas id="chartNilai"></canvas>
+
+      <button class="btn btn-secondary mt-3" data-bs-dismiss="modal">
+        Tutup
+      </button>
+
+    </div>
   </div>
 </div>
   
 </body>
 </html>
+
 
 
 
