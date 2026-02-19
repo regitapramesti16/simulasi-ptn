@@ -2,9 +2,11 @@ let chart;
 const mtk = avg(".mtk");
 
 function tampilkanGrafik(){
-  const mtk = avg(".mtk");
-  const ipa = avg(".ipa");
-  const eng = avg(".eng");
+  const inputs = document.querySelectorAll(".nilai");
+  let total = 0;
+
+  inputs.forEach(i => total += Number(i.value));
+  let rata = total / inputs.length;
 
   if(chart){
     chart.destroy();
@@ -13,9 +15,9 @@ function tampilkanGrafik(){
   chart = new Chart(document.getElementById('chartNilai'), {
     type: 'bar',
     data: {
-      labels: ['Matematika','IPA','Bahasa Inggris'],
+      labels: ['Rata-rata Nilai'],
       datasets: [{
-        data: [mtk, ipa, eng]
+        data: [rata]
       }]
     },
     options: {
@@ -53,6 +55,7 @@ function cekHasil(){
 
   tampilkanGrafik(); // 🔥 panggil grafik
 }
+
 
 
 
