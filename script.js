@@ -49,7 +49,10 @@ function cekHasil(){
     hasilText.innerHTML = "❌ BELUM LAYAK<br>Rata-rata: " + rata.toFixed(2);
     hasilText.className = "tidak";
   }
+
+  tampilkanGrafik(); // 🔥 panggil grafik
 }
+
 
 
 
