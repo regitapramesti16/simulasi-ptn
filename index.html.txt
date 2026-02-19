@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simulasi Kelayakan PTN</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<div class="kampus-wrapper">
+  <h2>Simulasi Kelayakan PTN</h2>
+  <p class="subtitle">Masukkan nilai rapor Semester 1–4</p>
+
+  <div class="grid">
+    <div>
+      <h3>Matematika</h3>
+      <input type="number" class="nilai mtk">
+      <input type="number" class="nilai mtk">
+      <input type="number" class="nilai mtk">
+      <input type="number" class="nilai mtk">
+    </div>
+
+    <div>
+      <h3>IPA</h3>
+      <input type="number" class="nilai ipa">
+      <input type="number" class="nilai ipa">
+      <input type="number" class="nilai ipa">
+      <input type="number" class="nilai ipa">
+    </div>
+
+    <div>
+      <h3>Bahasa Inggris</h3>
+      <input type="number" class="nilai eng">
+      <input type="number" class="nilai eng">
+      <input type="number" class="nilai eng">
+      <input type="number" class="nilai eng">
+    </div>
+  </div>
+
+  <button onclick="cekKelayakan()">CEK KELAYAKAN</button>
+
+  <div id="hasilBox" class="hidden">
+    <h3 id="statusText"></h3>
+    <p>Rata-rata Nilai: <strong id="rataNilai"></strong></p>
+    <canvas id="chartNilai"></canvas>
+  </div>
+</div>
+
+<div id="popup" class="popup hidden">
+  <div class="popup-content">
+    <h2 id="popupText"></h2>
+    <button onclick="tutupPopup()">Tutup</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
