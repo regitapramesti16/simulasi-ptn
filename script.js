@@ -39,6 +39,8 @@ function tutupHasil(){
 }
 
 function cekHasil(){
+  console.log("fungsi berjalan"); // debug
+
   let inputs = document.querySelectorAll(".nilai");
   let total = 0;
 
@@ -46,27 +48,12 @@ function cekHasil(){
 
   let rata = total / inputs.length;
 
-  let status = document.getElementById("hasilStatus");
-  let rataText = document.getElementById("hasilRata");
+  console.log("rata:", rata);
 
-  if(rata >= 90){
-    status.innerHTML = "✅ LAYAK MENDAFTAR";
-    status.className = "layak";
-  } else {
-    status.innerHTML = "❌ BELUM LAYAK";
-    status.className = "tidak";
-  }
-
-  rataText.innerHTML = "Rata-rata: " + rata.toFixed(2);
-
-  // tutup popup form
   tutupPopup();
-
-  // tampilkan popup hasil
   bukaHasil();
-
-  tampilkanGrafik(rata);
 }
+
 
 
 
