@@ -71,9 +71,15 @@ button {
   text-align:center;
 }
 
+#chartNilai{
+  max-height: 300px;
+  margin-top: 15px;
+}
+
 .hidden { display:none; }
 
 @keyframes fadeIn {
   from {opacity:0; transform:translateY(10px);}
   to {opacity:1; transform:translateY(0);}
 }
+
