@@ -78,7 +78,10 @@ function cekHasil(){
   // buka modal hasil
   let modalHasil = new bootstrap.Modal(document.getElementById('modalHasil'));
   modalHasil.show();
+
+  resetForm();
 }
+
 
 
 
