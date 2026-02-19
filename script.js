@@ -30,6 +30,12 @@ function tutupPopup() {
   document.getElementById("modalCek").classList.add("hidden");
 }
 
+function resetForm(){
+  document.querySelectorAll(".nilai").forEach(input => {
+    input.value = "";
+  });
+}
+
 function cekHasil(){
 
   let inputs = document.querySelectorAll(".nilai");
@@ -73,6 +79,7 @@ function cekHasil(){
   let modalHasil = new bootstrap.Modal(document.getElementById('modalHasil'));
   modalHasil.show();
 }
+
 
 
 
