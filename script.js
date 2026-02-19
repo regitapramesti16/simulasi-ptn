@@ -24,12 +24,12 @@ function tampilkanGrafik(){
   });
 }
 
-function bukaPopup(){
-  document.getElementById("popup").classList.remove("hidden");
+function bukaPopup() {
+  document.getElementById("popupForm").style.display = "flex";
 }
 
-function tutupPopup(){
-  document.getElementById("popup").classList.add("hidden");
+function tutupPopup() {
+  document.getElementById("popupForm").style.display = "none";
 }
 
 function cekHasil(){
@@ -50,5 +50,6 @@ function cekHasil(){
     hasilText.className = "tidak";
   }
 }
+
 
 
