@@ -24,11 +24,11 @@ function tampilkanGrafik(rata){
 }
 
 function bukaPopup() {
-  document.getElementById("popup").classList.remove("hidden");
+  document.getElementById("modalCek").classList.remove("hidden");
 }
 
 function tutupPopup() {
-  document.getElementById("popup").classList.add("hidden");
+  document.getElementById("modalCek").classList.add("hidden");
 }
 
 function bukaHasil(){
@@ -68,6 +68,7 @@ function cekHasil(){
 
   tampilkanGrafik(rata);
 }
+
 
 
 
