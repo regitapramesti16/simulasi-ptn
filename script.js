@@ -1,27 +1,5 @@
 let chart;
 
-function tampilkanGrafik(rata){
-
-  if(chart){
-    chart.destroy();
-  }
-
-  chart = new Chart(document.getElementById('chartNilai'), {
-    type: 'bar',
-    data: {
-      labels: ['Rata-rata Nilai'],
-      datasets: [{
-        data: [rata]
-      }]
-    },
-    options: {
-      responsive:true,
-      plugins:{legend:{display:false}},
-      scales:{y:{beginAtZero:true, max:100}}
-    }
-  });
-}
-
 function bukaPopup() {
   document.getElementById("modalCek").classList.remove("hidden");
 }
@@ -101,6 +79,7 @@ document.addEventListener("DOMContentLoaded", function(){
   }
 
 });
+
 
 
 
