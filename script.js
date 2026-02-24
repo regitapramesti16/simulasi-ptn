@@ -75,8 +75,6 @@ function cekHasil(){
 
   rataText.innerHTML = "Rata-rata: " + rata.toFixed(2);
 
-  tampilkanGrafik(rata);
-
   // tutup modal form
   let modalCek = bootstrap.Modal.getInstance(document.getElementById('modalCek'));
   modalCek.hide();
@@ -103,6 +101,7 @@ document.addEventListener("DOMContentLoaded", function(){
   }
 
 });
+
 
 
 
