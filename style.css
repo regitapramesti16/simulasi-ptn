@@ -40,15 +40,10 @@ body{
 
 /* button */
 .btn-primary{
-  background: #111827;
   border: none;
   border-radius: 10px;
   padding: 10px;
   font-weight: 500;
-}
-
-.btn-primary:hover{
-  background: #1f2937;
 }
 
 canvas{
@@ -87,6 +82,7 @@ canvas{
   from{opacity:0; transform: translateY(20px);}
   to{opacity:1; transform: translateY(0);}
 }
+
 
 
 
