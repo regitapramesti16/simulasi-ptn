@@ -27,7 +27,8 @@ function cekHasil(){
     }
   });
 
-  let warning = document.getElementById("warningBox");
+  const warningModal = new bootstrap.Modal(document.getElementById('warningModal'));
+  warningModal.show();
   if(filled === 0){
     warning.classList.remove("d-none");
 
@@ -79,6 +80,7 @@ document.addEventListener("DOMContentLoaded", function(){
   }
 
 });
+
 
 
 
