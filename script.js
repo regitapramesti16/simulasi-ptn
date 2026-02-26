@@ -44,7 +44,21 @@ function cekHasil(){
   let rataText = document.getElementById("hasilRata");
 
   if(rata > 100){
-    status.innerHTML = "⚠️ Mohon masukkan data nilai dengan benar";
+    status.innerHTML = `
+	<aside class="custom-bg-gradient-warning rounded-3 p-4 p-sm-5">
+	    <div class="d-flex align-items-center justify-content-between flex-column flex-xl-row text-center text-xl-start">
+		    <div class="mb-4 mb-xl-0">
+			    <div class="fs-3 fw-bold text-white">Selamat!</div>
+			    <div class="text-white-50">Kamu memenuhi  persyaratan nilai rapor untuk mendaftar di SMA Pradita Dirgantara </div>
+        </div>
+        <div class="ms-xl-4">
+            <div class="input-group mb-2">
+            	<button class="btn btn-outline-light" id="button-newsletter" type="button">Cek selengkapnya!</button>
+            </div>
+        </div>
+      </div>
+     </aside>
+	`;
     status.className = "koreksi";
   } else if(rata >= 90) {
     status.innerHTML = `
@@ -110,6 +124,7 @@ document.addEventListener("DOMContentLoaded", function(){
   }
 
 });
+
 
 
 
