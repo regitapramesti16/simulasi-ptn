@@ -52,7 +52,7 @@ canvas{
 }
 
 .custom-bg-gradient-layak {
-  background-image: linear-gradient(135deg, #1771ff 0%, #033f9e 100%);
+  background-image: linear-gradient(135deg, #0d69fc 0%, #033f9e 100%);
 }
 
 #warningBox{
@@ -83,6 +83,7 @@ canvas{
   from{opacity:0; transform: translateY(20px);}
   to{opacity:1; transform: translateY(0);}
 }
+
 
 
 
