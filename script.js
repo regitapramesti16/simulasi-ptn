@@ -43,11 +43,14 @@ function cekHasil(){
   let status = document.getElementById("hasilStatus");
   let rataText = document.getElementById("hasilRata");
 
-  if(rata >= 90){
-    status.innerHTML = "✅ LAYAK MENDAFTAR";
+  if(rata > 100){
+    status.innerHTML = "⚠️ Mohon masukkan data nilai dengan benar";
+    status.className = "koreksi";
+  } else if(rata >= 90) {
+    status.innerHTML = "✅ Selamat kamu layak mendaftar";
     status.className = "layak";
   } else {
-    status.innerHTML = "❌ BELUM LAYAK";
+    status.innerHTML = "❌ Maaf, nilai kamu belum layak untuk mendaftar";
     status.className = "tidak";
   }
 
@@ -79,6 +82,7 @@ document.addEventListener("DOMContentLoaded", function(){
   }
 
 });
+
 
 
 
