@@ -82,8 +82,8 @@ function cekHasil(){
 	<aside class="custom-bg-gradient-tidaklayak rounded p-4 p-sm-5">
 	    <div class="d-flex align-items-center justify-content-between flex-column flex-xl-row text-left">
 		    <div class="mb-4 mb-xl-0 text-center">
-			    <div class="h4 font-weight-bold text-white">Maaf...</div>
-			    <div class="text-white">Persyaratan nilai rapor yang kamu miliki belum bisa untuk mendaftar di SMA Pradita Dirgantara</div>
+			    <div class="h4 font-weight-bold text-dark">Maaf...</div>
+			    <div class="text-dark">Persyaratan nilai rapor yang kamu miliki belum bisa untuk mendaftar di SMA Pradita Dirgantara</div>
         	</div>
         	<div class="ms-xl-4">
             	<div class="input-group mb-2">
@@ -119,6 +119,7 @@ document.addEventListener("DOMContentLoaded", function(){
   }
 
 });
+
 
 
 
