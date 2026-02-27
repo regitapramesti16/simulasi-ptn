@@ -8,6 +8,7 @@ body{
   border: 1px solid #e5e7eb;
   box-shadow: 0 10px 30px rgba(0,0,0,0.08);
   max-height: 90vh;
+  overflow: hidden;
 }
 
 .modal-dialog {
@@ -94,6 +95,7 @@ canvas{
     margin: 1.75rem auto;
   }
 }
+
 
 
 
