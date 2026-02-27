@@ -13,6 +13,7 @@ body{
 .modal-dialog {
   max-width: 1080px;
   width: 90%;
+  margin: 30px auto;
 }
 
 .modal.fade .modal-dialog {
@@ -86,6 +87,14 @@ canvas{
   from{opacity:0; transform: translateY(20px);}
   to{opacity:1; transform: translateY(0);}
 }
+
+@media (max-width: 576px) {
+  .modal-dialog {
+    width: 95%;
+    margin: 1.75rem auto;
+  }
+}
+
 
 
 
