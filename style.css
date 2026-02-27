@@ -64,6 +64,16 @@ canvas{
   background-image: linear-gradient(135deg, #ffc421 0%, #cc9602 100%);
 }
 
+.form-control {
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  border-radius: 8px;
+}
+
+.form-control:focus {
+  box-shadow: 0 6px 18px rgba(13,105,252,0.25);
+  border-color: #0d69fc;
+}
+
 #warningBox{
   display:block;
   background-color: #fff3cd;
@@ -99,6 +109,7 @@ canvas{
     margin: 1.75rem auto;
   }
 }
+
 
 
 
