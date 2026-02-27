@@ -96,7 +96,7 @@ function cekHasil(){
     status.className = "tidak";
   }
 
-  rataText.innerHTML = "<div class='text-muted'>Rata-rata: " + rata.toFixed(2) + "</div>";
+  rataText.innerHTML = `<div class="text-muted">Rata-rata: ${rata.toFixed(2)}</div>`;
 
   $('#modalCek').modal('hide');
   $('#modalHasil').modal('show');
@@ -119,6 +119,7 @@ document.addEventListener("DOMContentLoaded", function(){
   }
 
 });
+
 
 
 
