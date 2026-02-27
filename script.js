@@ -57,6 +57,9 @@ function cekHasil(){
              	</div>
         	 </div>
       	</div>
+		<div>
+			<p class="text-white">Rata-rata : 90</>
+		</div>
      </aside>
 	`;
     status.className = "koreksi";
@@ -119,6 +122,7 @@ document.addEventListener("DOMContentLoaded", function(){
   }
 
 });
+
 
 
 
