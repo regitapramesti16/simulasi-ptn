@@ -47,7 +47,7 @@ function cekHasil(){
     status.innerHTML = `
 	<aside class="custom-bg-gradient-warning rounded p-4 p-sm-5">
 	    <div class="d-flex align-items-center justify-content-between flex-column flex-xl-row text-left">
-		    <div class="mb-4 mb-xl-0 text-center">
+		    <div class="mb-4 mb-xl-0">
 			    <div class="h4 font-weight-bold text-white">Upss...</div>
 			    <div class="text-white">Masukan data nilai dengan benar, ya</div>
         	</div>
@@ -64,7 +64,7 @@ function cekHasil(){
     status.innerHTML = `
     <aside class="custom-bg-gradient-layak rounded p-4 p-sm-5">
 	    <div class="d-flex align-items-center justify-content-between flex-column flex-xl-row text-left">
-		    <div class="mb-4 mb-xl-0 text-center">
+		    <div class="mb-4 mb-xl-0">
 			    <div class="h4 font-weight-bold text-white">Selamat!</div>
 			    <div class="text-white">Kamu memenuhi  persyaratan nilai rapor untuk mendaftar di SMA Pradita Dirgantara</div>
         	</div>
@@ -81,7 +81,7 @@ function cekHasil(){
     status.innerHTML = `
 	<aside class="custom-bg-gradient-tidaklayak rounded p-4 p-sm-5">
 	    <div class="d-flex align-items-center justify-content-between flex-column flex-xl-row text-left">
-		    <div class="mb-4 mb-xl-0 text-center">
+		    <div class="mb-4 mb-xl-0">
 			    <div class="h4 font-weight-bold text-white">Maaf...</div>
 			    <div class="text-white">Persyaratan nilai rapor yang kamu miliki belum bisa untuk mendaftar di SMA Pradita Dirgantara</div>
         	</div>
@@ -119,6 +119,7 @@ document.addEventListener("DOMContentLoaded", function(){
   }
 
 });
+
 
 
 
