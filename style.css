@@ -30,7 +30,7 @@ body{
   max-height: calc(90vh - 120px);
 }
 
-.card {
+.shadow {
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
 }
 
@@ -113,6 +113,7 @@ canvas{
     margin: 1.75rem auto;
   }
 }
+
 
 
 
