@@ -45,10 +45,10 @@ function cekHasil(){
 
   if(rata > 100){
     status.innerHTML = `
-	<aside class="custom-bg-gradient-warning rounded-3 p-4 p-sm-5">
+	<aside class="custom-bg-gradient-warning rounded p-4 p-sm-5">
 	    <div class="d-flex align-items-center justify-content-between flex-column flex-xl-row text-center text-xl-start">
 		    <div class="mb-4 mb-xl-0">
-			    <div class="fs-3 fw-bold text-white">Upss...</div>
+			    <div class="h4 font-weight-bold text-white">Upss...</div>
 			    <div class="text-white-50">Masukan data nilai dengan benar, ya</div>
         </div>
         <div class="ms-xl-4">
@@ -62,10 +62,10 @@ function cekHasil(){
     status.className = "koreksi";
   } else if(rata >= 90) {
     status.innerHTML = `
-    <aside class="custom-bg-gradient-layak rounded-3 p-4 p-sm-5">
+    <aside class="custom-bg-gradient-layak rounded p-4 p-sm-5">
 	    <div class="d-flex align-items-center justify-content-between flex-column flex-xl-row text-center text-xl-start">
 		    <div class="mb-4 mb-xl-0">
-			    <div class="fs-3 fw-bold text-white">Selamat!</div>
+			    <div class="h4 font-weight-bold text-white">Selamat!</div>
 			    <div class="text-white-50">Kamu memenuhi  persyaratan nilai rapor untuk mendaftar di SMA Pradita Dirgantara</div>
         </div>
         <div class="ms-xl-4">
@@ -79,10 +79,10 @@ function cekHasil(){
     status.className = "layak";
   } else {
     status.innerHTML = `
-	<aside class="custom-bg-gradient-tidaklayak rounded-3 p-4 p-sm-5">
+	<aside class="custom-bg-gradient-tidaklayak rounded p-4 p-sm-5">
 	    <div class="d-flex align-items-center justify-content-between flex-column flex-xl-row text-center text-xl-start">
 		    <div class="mb-4 mb-xl-0">
-			    <div class="fs-3 fw-bold text-white">Maaf...</div>
+			    <div class="h4 font-weight-bold text-white">Maaf...</div>
 			    <div class="text-white-50">Persyaratan nilai rapor yang kamu miliki belum bisa untuk mendaftar di SMA Pradita Dirgantara</div>
         </div>
         <div class="ms-xl-4">
@@ -98,13 +98,8 @@ function cekHasil(){
 
   rataText.innerHTML = "Rata-rata: " + rata.toFixed(2);
 
-  // tutup modal form
-  let modalCek = bootstrap.Modal.getInstance(document.getElementById('modalCek'));
-  modalCek.hide();
-
-  // buka modal hasil
-  let modalHasil = new bootstrap.Modal(document.getElementById('modalHasil'));
-  modalHasil.show();
+  $('#modalCek').modal('hide');
+  $('#modalHasil').modal('show');
 }
 
 function resetForm(){
@@ -120,10 +115,11 @@ document.addEventListener("DOMContentLoaded", function(){
   const modalCek = document.getElementById('modalCek');
 
   if(modalCek){
-    modalCek.addEventListener('hidden.bs.modal', resetForm);
+    $('#modalCek').on('hidden.bs.modal', resetForm);
   }
 
 });
+
 
 
 
