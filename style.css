@@ -7,11 +7,17 @@ body{
   border-radius: 14px;
   border: 1px solid #e5e7eb;
   box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  max-height: 90vh;
 }
 
 .modal-dialog {
   max-width: 1080px;
   width: 90%;
+}
+
+.modal-body {
+  overflow-y: auto;
+  max-height: calc(90vh - 120px);
 }
 
 .hasil-box{
@@ -76,6 +82,7 @@ canvas{
   from{opacity:0; transform: translateY(20px);}
   to{opacity:1; transform: translateY(0);}
 }
+
 
 
 
