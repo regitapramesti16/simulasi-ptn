@@ -49,7 +49,7 @@ function cekHasil(){
 	    <div class="d-flex align-items-center justify-content-between flex-column flex-xl-row text-center text-xl-start">
 		    <div class="mb-4 mb-xl-0">
 			    <div class="h4 font-weight-bold text-white">Upss...</div>
-			    <div class="text-white-50">Masukan data nilai dengan benar, ya</div>
+			    <div class="text-white">Masukan data nilai dengan benar, ya</div>
         </div>
         <div class="ms-xl-4">
             <div class="input-group mb-2">
@@ -66,14 +66,14 @@ function cekHasil(){
 	    <div class="d-flex align-items-center justify-content-between flex-column flex-xl-row text-center text-xl-start">
 		    <div class="mb-4 mb-xl-0">
 			    <div class="h4 font-weight-bold text-white">Selamat!</div>
-			    <div class="text-white-50">Kamu memenuhi  persyaratan nilai rapor untuk mendaftar di SMA Pradita Dirgantara</div>
-        </div>
-        <div class="ms-xl-4">
-            <div class="input-group mb-2">
-            	<button class="btn btn-outline-light" id="button-newsletter" type="button">Cek selengkapnya!</button>
-            </div>
-        </div>
-      </div>
+			    <div class="text-white">Kamu memenuhi  persyaratan nilai rapor untuk mendaftar di SMA Pradita Dirgantara</div>
+        	</div>
+        	<div class="ms-xl-4">
+            	<div class="input-group mb-2">
+            		<button class="btn btn-outline-light" id="button-newsletter" type="button">Cek selengkapnya!</button>
+            	</div>
+        	</div>
+      	</div>
      </aside>   
     `;
     status.className = "layak";
@@ -83,7 +83,7 @@ function cekHasil(){
 	    <div class="d-flex align-items-center justify-content-between flex-column flex-xl-row text-center text-xl-start">
 		    <div class="mb-4 mb-xl-0">
 			    <div class="h4 font-weight-bold text-white">Maaf...</div>
-			    <div class="text-white-50">Persyaratan nilai rapor yang kamu miliki belum bisa untuk mendaftar di SMA Pradita Dirgantara</div>
+			    <div class="text-white">Persyaratan nilai rapor yang kamu miliki belum bisa untuk mendaftar di SMA Pradita Dirgantara</div>
         </div>
         <div class="ms-xl-4">
             <div class="input-group mb-2">
@@ -119,6 +119,7 @@ document.addEventListener("DOMContentLoaded", function(){
   }
 
 });
+
 
 
 
