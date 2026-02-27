@@ -38,7 +38,7 @@ function cekHasil(){
     return;
   }
 
-  let rata = total / filled;
+  let rata = total / 12;
 
   let status = document.getElementById("hasilStatus");
   let rataText = document.getElementById("hasilRata");
@@ -119,6 +119,7 @@ document.addEventListener("DOMContentLoaded", function(){
   }
 
 });
+
 
 
 
